@@ -8,8 +8,8 @@
 <meta name="description" content="NIEL'S (@web3withBurian). Web3 KOL, content creator, and community builder. Open for paid work and collabs." />
 <meta property="og:image" content="assets/avatar.jpg" />
 <style>
-  :root { --bg:#05070d; --card:#0c1424; --card2:#12203a; --line:#1d3358; --gold:#3b82f6; --gold2:#93c5fd; --text:#f4f8ff; --mute:#c5d4ea; --soft:#7f96b8; }
-  [data-theme="light"] { --bg:#f5f8ff; --card:#fff; --card2:#e8f0ff; --line:#d5e3f8; --gold:#1d4ed8; --gold2:#1e40af; --text:#0b1730; --mute:#3d5274; --soft:#7f96b8; }
+  :root { --bg:#05070d; --card:#0c1424; --card2:#12203a; --line:#1d3358; --gold:#fff; --gold2:#e8e8e8; --text:#f4f8ff; --mute:#c5d4ea; --soft:#7f96b8; }
+  [data-theme="light"] { --bg:#f5f8ff; --card:#fff; --card2:#e8f0ff; --line:#d5e3f8; --gold:#111; --gold2:#222; --text:#0b1730; --mute:#3d5274; --soft:#7f96b8; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
   .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
@@ -24,7 +24,7 @@
   h1 { font-size:clamp(56px, 9vw, 92px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
   .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
   .sub { margin-bottom:22px; } .sub b { color:var(--gold2); }
-  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(59,130,246,.1); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(255,255,255,.06); padding:16px 18px; border-radius:0 12px 12px 0; }
   .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
   .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
   .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
@@ -43,6 +43,7 @@
   .stat, .card, .work { padding:18px; }
   .stat strong { display:block; font-size:28px; }
   .work { margin-bottom:12px; }
+  .shot { border-radius:14px; border:1px solid var(--line); margin-top:12px; width:100%; }
   .work a { color:var(--gold2); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
   .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
   .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
@@ -80,6 +81,17 @@
   </section>
   <section id="work">
     <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <article class="work">
+      <p class="kicker">COINCOLA</p>
+      <h3>P2P contest winner</h3>
+      <p>Selected as a winner of the worst P2P experience contest. Reward details requested.</p>
+      <img class="shot" src="assets/coincola.jpg" alt="CoinCola contest winner message" />
+    </article>
+    <div class="grid2">
+      <article class="work"><p class="kicker">DUELBITS</p><h3>KOL portal</h3><p>Asked for the UID to set up the KOL portal.</p><img class="shot" src="assets/duelbits.jpg" alt="Duelbits KOL portal message" /></article>
+      <article class="work"><p class="kicker">REWARD</p><h3>Distributed</h3><p>Rewards sent, with the transaction hash on the message.</p><img class="shot" src="assets/reward.jpg" alt="Reward distribution message" /></article>
+      <article class="work"><p class="kicker">COLLAB</p><h3>The follow-up</h3><p>Telegram add, then the plan. A seat, not a cold pitch.</p><img class="shot" src="assets/collab.jpg" alt="Collab follow-up message" /></article>
+    </div>
     <div class="grid2">
       <article class="work"><p class="kicker">SOCIETY · 115 LIKES</p><h3>Who holds the record</h3><p>Long piece on Society Protocol, from clay tablets to a synchronized state. 2.4K views, 80 replies, 46 reposts.</p><a href="https://x.com/web3withBurian/status/2104439375446569026" target="_blank" rel="noopener">Open the article →</a></article>
       <article class="work"><p class="kicker">NAIJA STAYS · 81 LIKES</p><h3>Agent wahala, then the app</h3><p>Rent, buy, escrow. 601 views, 72 replies.</p><a href="https://x.com/web3withBurian/status/2090169228410413218" target="_blank" rel="noopener">Open the piece →</a></article>
