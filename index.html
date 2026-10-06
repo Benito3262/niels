@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NIEL'S · Writer · KOL · Community</title>
+<meta name="description" content="NIEL'S (@web3withBurian). Web3 KOL, content creator, and community builder. Open for paid work and collabs." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#05070d; --card:#0c1424; --card2:#12203a; --line:#1d3358; --gold:#3b82f6; --gold2:#93c5fd; --text:#f4f8ff; --mute:#c5d4ea; --soft:#7f96b8; }
+  [data-theme="light"] { --bg:#f5f8ff; --card:#fff; --card2:#e8f0ff; --line:#d5e3f8; --gold:#1d4ed8; --gold2:#1e40af; --text:#0b1730; --mute:#3d5274; --soft:#7f96b8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.18em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(56px, 9vw, 92px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold2); }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(59,130,246,.1); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:var(--gold); color:#fff; border-color:var(--gold); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; background:#fff; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; background:var(--card); }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold2); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .work a { color:var(--gold2); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">NIEL'S</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Light</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for paid work and collabs</p>
+      <h1>NIEL'S</h1>
+      <p class="sub">Writer <b>·</b> KOL <b>·</b> Community</p>
+      <div class="obj"><small>// objective_</small>I write. I create. The long piece, then the room that stays.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/web3withBurian" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/web3withBurian" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="NIEL'S" /><div class="chips"><span class="chip">@web3withBurian</span><span class="chip">1.1K on X</span><span class="chip">POW in highlights</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 KOL, content creator, and community builder. Research-first threads on products, launches, and the line people can finish.</p>
+    <p class="lead">Open for paid posts, KOL seats, community work, and growth collabs.</p>
+    <div class="stats"><div class="stat"><strong>1.1K</strong><span>X followers</span></div><div class="stat"><strong>115</strong><span>Likes on Society</span></div><div class="stat"><strong>6</strong><span>Long pieces on the page</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Content</h3><p>Threads and explainers. The product, written after the read.</p></article>
+      <article class="card"><h3>KOL</h3><p>Campaign posts that stay on the timeline. Marketing with a name on it.</p></article>
+      <article class="card"><h3>Community</h3><p>Building and growth. The room after the thread.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <div class="grid2">
+      <article class="work"><p class="kicker">SOCIETY · 115 LIKES</p><h3>Who holds the record</h3><p>Long piece on Society Protocol, from clay tablets to a synchronized state. 2.4K views, 80 replies, 46 reposts.</p><a href="https://x.com/web3withBurian/status/2104439375446569026" target="_blank" rel="noopener">Open the article →</a></article>
+      <article class="work"><p class="kicker">NAIJA STAYS · 81 LIKES</p><h3>Agent wahala, then the app</h3><p>Rent, buy, escrow. 601 views, 72 replies.</p><a href="https://x.com/web3withBurian/status/2090169228410413218" target="_blank" rel="noopener">Open the piece →</a></article>
+      <article class="work"><p class="kicker">SELECT · 57 LIKES</p><h3>A launch by rules, not trust</h3><p>Same price, locked tokenomics, refund if the target misses. 466 views.</p><a href="https://x.com/web3withBurian/status/2100802353238622576" target="_blank" rel="noopener">Open the post →</a></article>
+      <article class="work"><p class="kicker">KRIPICARD · 56 LIKES</p><h3>The night USDT was useless</h3><p>A $200 ad that never ran, then the card. 444 views, 47 replies.</p><a href="https://x.com/web3withBurian/status/2091774885106237510" target="_blank" rel="noopener">Open the thread →</a></article>
+      <article class="work"><p class="kicker">SUPERLUMINAL · 48 LIKES</p><h3>The queue you were never told about</h3><p>Dual flow batch auctions, walked through the explainer. 343 views.</p><a href="https://x.com/web3withBurian/status/2094211645643845699" target="_blank" rel="noopener">Open the breakdown →</a></article>
+      <article class="work"><p class="kicker">MEXC · 39 LIKES</p><h3>Same card, two rates</h3><p>Cashback caps, Standard to Elite. 518 views.</p><a href="https://x.com/web3withBurian/status/2101340118141264157" target="_blank" rel="noopener">Open the post →</a></article>
+    </div>
+    <div class="quote">“I write. I create.”<small>The long piece is the proof. POW lives in the highlights.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for both</h2>
+    <p class="lead">Paid work, or a collab.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/web3withBurian">@web3withBurian</a><a class="btn" href="https://t.me/web3withBurian">t.me/web3withBurian</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>NIEL'S</span><span>@web3withBurian · t.me/web3withBurian</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const l=document.body.dataset.theme==="light";document.body.dataset.theme=l?"":"light";btn.textContent=l?"Light":"Dark";};</script>
+</body>
+</html>
